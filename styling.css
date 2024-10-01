@@ -3,12 +3,12 @@
     --dark-blue: hsl(213, 19%, 18%);
     --very-dark-blue: hsl(216, 12%, 8%);
     --primary-orange: hsl(25, 97%, 53%);
-}  
+}
 body { 
     background-color: var(--very-dark-blue); 
     color: var(--light-grey);
-    font-family: Outfit;
-    text-align: center;
+    font-family: 'Overpass';
+    font-size: 15px;
 }
 h1 {
     color: white;
@@ -19,7 +19,8 @@ h2 {
     filter: brightness(135%);
     color: var(--primary-orange);
     padding: 5px 15px;
-    font-size: 0.8rem;
+    font-size: 1rem;
+    font-weight: 400;
     border-radius: 50px;
 }
 main {
