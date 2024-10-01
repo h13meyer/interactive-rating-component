@@ -1,68 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" type="text/css" href="./css-reset.css">
-  <link rel="stylesheet" type="text/css" href="./font/font.css">
-  <link rel="stylesheet" type="text/css" href="./styling.css">
-  
-  <title>Frontend Mentor | Interactive rating component</title>
-</head>
-<body>
-  <main>
-    <div class="content">
-      <div class="card">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" type="text/css" href="./css-reset.css">
+    <link rel="stylesheet" type="text/css" href="./font/font.css">
+    <link rel="stylesheet" type="text/css" href="./styling.css">
+    
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body>
+    <main>
+      <div class="content">
+        <section class="card" id="rating-section">
+          <div class="circle">
+            <img src="./images/icon-star.svg" alt="Icon Star">
+          </div>
+          <h1>
+            How did we do?
+          </h1>
+          <p>
+            Please let us know how we did with your support request. All feedback is appreciated 
+          to help us improve our offering!
+          </p>
+          <div class="rating-scale">
+            <button id="rating-1" class="circle rating-button" onclick="selectRating(1)">1</button>
+            <button id="rating-2" class="circle rating-button" onclick="selectRating(2)">2</button>
+            <button id="rating-3" class="circle rating-button" onclick="selectRating(3)">3</button>
+            <button id="rating-4" class="circle rating-button" onclick="selectRating(4)">4</button>
+            <button id="rating-5" class="circle rating-button" onclick="selectRating(5)">5</button>
+          </div>
+          <button class="primary-button" onclick="submit()">
+            SUBMIT
+          </button>
+        </section>
 
-        <div class="circle">
-          <img src="./images/icon-star.svg" alt="Icon Star">
-        </div>
-
-        <h1>
-          How did we do?
-        </h1>
-
-        <p>
-          Please let us know how we did with your support request. All feedback is appreciated 
-        to help us improve our offering!
-        </p>
-
-        <div class="rating-scale">
-          <button class="circle rating-button">1</button>
-          <button class="circle rating-button selected">2</button>
-          <button class="circle rating-button">3</button>
-          <button class="circle rating-button">4</button>
-          <button class="circle rating-button">5</button>
-        </div>
-
-        <button class="primary-button">
-          SUBMIT
-        </button>
-
-        <!-- <img class="thank-you-img" src="./images/illustration-thank-you.svg" alt="Illustration of mobile phone">
-
-        <h2>
-          You selected x out of 5
-        </h2>
-
-        <h1>
-          Thank you!
-        </h1>
-
-        <p>
-          We appreciate you taking the time to give a rating. If you ever need more support, 
-          don’t hesitate to get in touch!
-        </p> -->
-        
+        <section class="card" id="thank-you-section">
+          <img class="thank-you-img" src="./images/illustration-thank-you.svg" alt="Illustration of mobile phone">
+          <h2 id="result">
+            No selection yet!
+          </h2>
+          <h1>
+            Thank you!
+          </h1>
+          <p>
+            We appreciate you taking the time to give a rating. If you ever need more support, 
+            don’t hesitate to get in touch!
+          </p>
+        </section>
       </div>
-    </div>
-  
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="https://github.com/h13meyer" target="_blank">h13meyer</a>.
-    </div>
-  </main>
-</body>
+    
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://github.com/h13meyer" target="_blank">h13meyer</a>.
+      </div>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
 </html>
