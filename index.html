@@ -15,17 +15,19 @@
     <main>
       <div class="content">
         <section class="card" id="rating-section">
-          <div class="circle">
+          <div class="circle" style="margin-bottom: 10px;">
             <img src="./images/icon-star.svg" alt="Icon Star">
           </div>
-          <h1>
-            How did we do?
-          </h1>
-          <p>
-            Please let us know how we did with your support request. All feedback is appreciated 
-          to help us improve our offering!
-          </p>
-          <div class="rating-scale">
+          <div class="info">
+            <h1>
+              How did we do?
+            </h1>
+            <p>
+              Please let us know how we did with your support request. All feedback is appreciated 
+            to help us improve our offering!
+            </p>
+          </div>
+          <div class="rating-scale" style="margin-bottom: 10px;">
             <button id="rating-1" class="circle rating-button" onclick="selectRating(1)">1</button>
             <button id="rating-2" class="circle rating-button" onclick="selectRating(2)">2</button>
             <button id="rating-3" class="circle rating-button" onclick="selectRating(3)">3</button>
@@ -33,7 +35,7 @@
             <button id="rating-5" class="circle rating-button" onclick="selectRating(5)">5</button>
           </div>
           <button class="primary-button" onclick="submit()">
-            SUBMIT
+            submit
           </button>
         </section>
 
@@ -42,13 +44,15 @@
           <h2 id="result">
             No selection yet!
           </h2>
-          <h1>
-            Thank you!
-          </h1>
-          <p>
-            We appreciate you taking the time to give a rating. If you ever need more support, 
-            don’t hesitate to get in touch!
-          </p>
+          <div class="info" style="text-align: center;">
+            <h1>
+              Thank you!
+            </h1>
+            <p>
+              We appreciate you taking the time to give a rating. If you ever need more support, 
+              don’t hesitate to get in touch!
+            </p>
+          </div>
         </section>
       </div>
     
