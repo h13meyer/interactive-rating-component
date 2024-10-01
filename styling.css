@@ -1,0 +1,84 @@
+:root {
+    --light-grey: hsl(217, 12%, 63%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+    --primary-orange: hsl(25, 97%, 53%);
+}  
+body { 
+    background-color: var(--very-dark-blue); 
+    color: var(--light-grey);
+    font-family: Outfit;
+}
+h1 {
+    color: white;
+}
+main {
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+}
+.content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 350px;
+    background-color: var(--dark-blue);
+    padding: 25px;
+    border-radius: 15px;    
+}
+.circle {
+    background-color: var(--dark-blue);
+    filter: brightness(135%);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+.rating-scale {
+    display: flex;
+    justify-content: space-between;
+}
+.rating-button {
+    cursor: pointer;
+    color: var(--light-grey);
+    border-style: none;
+}
+.rating-button:hover {
+    background-color: var(--primary-orange);
+    filter: none;
+    color: black;
+}
+.rating-button + .selected {
+    background-color: white;
+    filter: none;
+    color: black;
+}
+.primary-button {
+    cursor: pointer;
+    background-color: var(--primary-orange);
+    color: black;
+    border-style: none;
+    border-radius: 50px;
+    padding: 5px;
+}
+.primary-button:hover {
+    background-color: white;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    margin-top: 10px;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
